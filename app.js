@@ -80,7 +80,7 @@ http
                                 timeout:5000,
                                 data: {math:math,format:format},
                                 success:function(data){
-                                    console.log('操作成功',data.mml);
+                                    console.log('操作成功',data);
                                     $('#svg').attr('src',svgToBase64(data.svg));
                                 },
                                 error:function(err){
